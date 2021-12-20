@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+.top{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0px;
+    background: white;
+    border-bottom: 0.5px solid rgb(145, 142, 142);
+    box-shadow: 0.5px 1px 5px rgb(145, 142, 142);
+    z-index: 1;
+    overflow: hidden;
+}
+.left-top {
+    float: left;
+    margin-left: 10px;
+}
+.right-top{
+    float: right;
+    margin-right: 10px;
+}
+.left-top a, .right-top a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.left-top a:hover, .right-top a:hover{
+    background-color: rgb(104, 106, 107);
+}
+.banner{
+    position: relative;
+}
+.banner-content{
+    position: absolute;
+    left: 41%;
+    top: 49%;
+    font-size: 40px;
+}
+.banner-content b{
+    background-color:rgba(7, 7, 7,0.8);
+    color: rgba(247, 241, 241, 0.966);
+    padding: 10px 15px;
+}
+.banner-content p {
+    float:right;
+}
+.title{
+    font-size: 20px;
+    margin: 30px 0px;
+    padding: 15px 0px;
+    border-bottom: 0.5px solid rgb(243, 241, 241);
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.flex-item{
+    width:23%;
+    margin-bottom: 14px;
+}
+.flex-item img{
+    width: 100%;
+}
+.item {
+    position: relative;
+}
+.item p {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    color: white;
+    padding: 10px 17px;
+}
+.about img{
+    -webkit-filter: grayscale(1);    
+    filter: grayscale(1); 
+    margin-bottom: 20px;
+}
+.about b {
+    font-size: 20px;
+}
+.job-about{
+    padding: 20px 0px;
+}
+.content-about{
+    font-size: 20px;
+    font-weight: bold;
+}
+.but-about{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    background-color: white;
+    border:none;
+    font-weight: bold;
+}
+.but-about:hover{
+    background-color: rgb(121, 118, 118);
+    cursor: pointer;
+}
+.control{
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .control input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+  form label{
+      font-size: 20px;
+  }
+  .but-contact{
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border:none;
+      font-size: 15px;
+  }
+  .map{
+      margin-top: 50px;
+      overflow: hidden;
+  }
+  footer{
+    background-color: black;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .pow{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding:20px;
+  }
+  .pow a{
+    color: white;
+    text-decoration: none;
+  }
+  .pow a:hover{
+    color: green;
+    text-decoration: underline;
+  }
+  @media screen and (max-width:1025px){
+    .top{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 15px 0px;
+        background: white;
+        border-bottom: 0.5px solid rgb(145, 142, 142);
+        z-index: 1;
+        overflow: hidden;
+    }
+      .banner-content{
+        position: absolute;
+        left: 32%;
+        top: 50%;
+        font-size: 40px;
+    }
+      .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .flex-item{
+        width:23%;
+        margin-bottom: 14px;
+    }
+    .flex-item img{
+        width: 100%;
+    }
+      .map img{
+          width:100% ;
+          overflow: hidden;
+      }
+  }
+  @media screen and (max-width:768px){
+    .top{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 15px 0px;
+        background: white;
+        border-bottom: 0.5px solid rgb(145, 142, 142);
+        z-index: 1;
+        overflow: hidden;
+    }
+      .banner-content{
+        position: absolute;
+        left: 32%;
+        top: 48%;
+        font-size: 40px;
+    }
+      .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .flex-item{
+        width:48%;
+        margin-bottom: 14px;
+    }
+    .flex-item img{
+        width: 100%;
+    }
+      .map img{
+          width:100% ;
+          overflow: hidden;
+      }
+  }
+  @media screen and (max-width:427px){
+    .top{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 15px 0px;
+        background: white;
+        border-bottom: 0.5px solid rgb(145, 142, 142);
+        z-index: 1;
+        overflow: hidden;
+    }
+    
+    .top .right-top{
+        display: none;
+    }
+      .banner-content{
+        position: absolute;
+        left: 40%;
+        top: 50%;
+        font-size: 25px;
+    }
+      .banner-content p {
+        display: none;
+    }
+      .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .flex-item{
+        width:100%;
+        margin-bottom: 14px;
+    }
+    .flex-item img{
+        width: 100%;
+    }
+      .map img{
+          width:100% ;
+          overflow: hidden;
+      }
+  }
