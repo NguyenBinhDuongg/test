@@ -260,3 +260,12 @@
           overflow: hidden;
       }
   }
+  .error{
+      border: 1px solid red;
+  }
+  .er{
+      display: none;
+  }
+  .er_color{
+      color: rgb(109, 6, 6);
+  }

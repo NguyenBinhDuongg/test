@@ -109,18 +109,22 @@
         <form action="">
             <label for="">Lets get in touch and talk about your next project.</label>
             <div class="control">
-				<input  type="text" required name="Name" placeholder="Name">
+				<input  type="text" id="Name" name="Name" placeholder="Name">
+                <span class="er er_color" id="er_Name">Mời bạn nhập tên</span>
 			  </div>
 			  <div class="control">
-				<input  type="text" required name="Email" placeholder="Email">
+				<input  type="text"  id="Email" name="Email" placeholder="Email">
+                <span class="er er_color" id="er_Email">Mời bạn nhập email</span>
 			  </div>
 			  <div class="control">
-				<input required name="Subject" placeholder="Subject">
+				<input id="Subject"  name="Subject" placeholder="Subject">
+                <span class="er er_color" id="er_Subject">Mời bạn nhập subject</span>
 			  </div>
               <div class="control">
-				<input required name="Comment" placeholder="Comment">
+				<input id="Comment"  name="Comment" placeholder="Comment">
+                <span class="er er_color" id="er_Comment">Mời bạn nhập bình luận</span>
 			  </div>
-              <button class="but-contact">SEND MESSAGE</button>
+              <button class="but-contact" onclick="return validate()">SEND MESSAGE</button>
         </form> 
         <div class="map">
             <img src="img/map.jpg" alt="">
